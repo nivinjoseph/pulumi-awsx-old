@@ -1,8 +1,10 @@
 {
     "name": "@pulumi/awsx",
-    "version": "${VERSION}",
+    "version": "0.40.1",
     "description": "Pulumi Amazon Web Services (AWS) infrastructure components.",
     "license": "Apache-2.0",
+    "main": "./bin/index.js",
+    "types": "./bin/index.d.ts",
     "keywords": [
         "pulumi",
         "aws",
@@ -11,7 +13,8 @@
     "homepage": "https://pulumi.io",
     "repository": "https://github.com/pulumi/pulumi-awsx",
     "scripts": {
-        "install-peers": "install-peers"
+        "install-peers": "install-peers",
+        "ts-compile": "tsc --build"
     },
     "dependencies": {
         "@pulumi/aws": "^6.45.2",
